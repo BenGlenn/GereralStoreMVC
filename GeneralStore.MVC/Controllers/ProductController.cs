@@ -19,7 +19,13 @@ namespace GeneralStore.MVC.Controllers
             return View(_db.Products.ToList());
         }
 
-        // Get: Product 
+        // Get: Product
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        // Post: Product 
         [HttpPost]
         public ActionResult Create(Product product)
         {
@@ -29,10 +35,8 @@ namespace GeneralStore.MVC.Controllers
                 _db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            return View(product);
 
-            {
-                return View();
-            }
         }
     }
 }
