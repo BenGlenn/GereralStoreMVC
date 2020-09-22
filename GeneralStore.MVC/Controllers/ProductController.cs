@@ -74,8 +74,6 @@ namespace GeneralStore.MVC.Controllers
 
         // GET : Edit
         // Product/Edit/{id}
-
-
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -105,7 +103,7 @@ namespace GeneralStore.MVC.Controllers
         }
 
         // GET : Details
-        // Product/Details/{id}
+        // Product/Details/{id}  
         public ActionResult Details(int? id)
         {
             if (id == null)
