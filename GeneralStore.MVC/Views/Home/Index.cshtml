@@ -2,11 +2,14 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>General Store</h1>
-    <p class="lead">The Genral Store help to keep track of product, customer information, and inventory.</p>
-    <p>@Html.ActionLink("View Store", "Index")</p>
-</div>
+    <div class="jumbotron">
+        <h1>Products</h1>
+        <p class="lead">
+            Our General Store, located in rural Indiana, is host to a multitude of fine food and items of distinction.<br />
+            Come browse our products and see what we have for you.
+        </p>
+        @Html.ActionLink("Check Products", "Index", "Product", null, new { @class = "btn btn-primary btn-large" })
+    </div>
 
 
 <div class="row">
