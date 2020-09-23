@@ -172,22 +172,10 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\TransactionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202009221349008_InitialCreate.cs" />
-    <Compile Include="Migrations\202009221349008_InitialCreate.Designer.cs">
-      <DependentUpon>202009221349008_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202009221910451_CustomerCreation.cs" />
-    <Compile Include="Migrations\202009221910451_CustomerCreation.Designer.cs">
-      <DependentUpon>202009221910451_CustomerCreation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202009222007523_TransactionCreation.cs" />
-    <Compile Include="Migrations\202009222007523_TransactionCreation.Designer.cs">
-      <DependentUpon>202009222007523_TransactionCreation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -263,6 +251,9 @@
     <Content Include="Views\Customer\Delete.cshtml" />
     <Content Include="Views\Customer\Edit.cshtml" />
     <Content Include="Views\Customer\Details.cshtml" />
+    <Content Include="Views\Transaction\Index.cshtml" />
+    <Content Include="Views\Transaction\Create.cshtml" />
+    <Content Include="Views\Transaction\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -279,17 +270,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202009221349008_InitialCreate.resx">
-      <DependentUpon>202009221349008_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202009221910451_CustomerCreation.resx">
-      <DependentUpon>202009221910451_CustomerCreation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202009222007523_TransactionCreation.resx">
-      <DependentUpon>202009222007523_TransactionCreation.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
